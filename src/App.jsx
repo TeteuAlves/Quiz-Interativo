@@ -4,12 +4,12 @@ import Header from "./components/Header"
 import QuestionCard from "./components/QuestionCard"
 
 function App() {
-  
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   return (
     <>
       <Header index={currentIndex}/>
-      <QuestionCard index={currentIndex} onClickButton={a} />
+      <QuestionCard index={currentIndex} onClickButton={() => setCurrentIndex(currentIndex + 1)} />
     </>
   )
 }
