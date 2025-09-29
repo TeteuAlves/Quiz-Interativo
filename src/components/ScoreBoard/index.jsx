@@ -15,7 +15,7 @@ export default function ScoreBoard({ score, totalQuestions, correctAnswerTimes, 
 
     return (
         <div className={styles.scoreBoardContainer}>
-            <h2 className={styles.title}>Resultados Finais 🏆</h2>
+            <h2 className={styles.title}>Resultados Finais</h2>
             
             <div className={styles.metricsGrid}>
                 
