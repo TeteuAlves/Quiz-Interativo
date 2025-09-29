@@ -1,5 +1,6 @@
+import {question} from "../../data/questions"
 import styles from "./Header.module.css"
-import {questions} from "../../data/questions"
+
 import { useEffect, useState } from "react"
 
 export default function Header({index}) {
@@ -17,9 +18,9 @@ export default function Header({index}) {
   const seconds = time % 60
 
   return (
-    <header>
+    <header className={styles.header}>
       <h1>Quiz Interativo</h1>
-      <h2>{`Questão ${questions[index].id} de ${questions.length}`}</h2>
+      <h2>{`Questão ${question[index].id} de ${question.length}`}</h2>
       <h3>Tempo: {minutes}:{seconds.toString().padStart(2, "0")}</h3>
     </header>
   )
